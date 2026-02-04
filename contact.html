@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Atarifix Consulting | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Atarifix Home">
+          <img src="logo.png" alt="Atarifix Logo" class="logo-img" />
+          <div>Atarifix Consulting</div>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn primary" href="contact.html">Get Started</a>
+          <button class="mobile-toggle" id="menuBtn" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h3 class="section-title">Contact</h3>
+      <p class="section-sub">
+        This is a simple contact area you can upgrade later into a real form that sends messages.
+      </p>
+
+      <div class="two-col">
+        <div class="panel box">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>Email: <a href="mailto:info@atarifix.com">info@atarifix.com</a></li>
+            <li>Phone: <a href="tel:+2347059302853">+2347059302853</a></li>
+          </ul>
+        </div>
+
+        <div class="panel box">
+          <h3>Quick Message (demo)</h3>
+          <form onsubmit="event.preventDefault(); alert('This demo form does not send yet. Hook it up to a backend later.');">
+            <label style="display:block; margin-bottom:10px;">
+              <span style="display:block; font-size:13px; color:var(--muted); margin-bottom:6px;">Your Name</span>
+              <input required
+                style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.06); color:var(--text);"
+                placeholder="John Doe"/>
+            </label>
+
+            <label style="display:block; margin-bottom:10px;">
+              <span style="display:block; font-size:13px; color:var(--muted); margin-bottom:6px;">Email</span>
+              <input required type="email"
+                style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.06); color:var(--text);"
+                placeholder="you@email.com"/>
+            </label>
+
+            <label style="display:block; margin-bottom:12px;">
+              <span style="display:block; font-size:13px; color:var(--muted); margin-bottom:6px;">Message</span>
+              <textarea required rows="4"
+                style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.06); color:var(--text); resize:vertical;"
+                placeholder="Tell us what you need..."></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px;">
+            <img src="logo.png" alt="Atarifix Logo" class="logo-img" />
+            <div>Atarifix Consulting</div>
+          </div>
+          <div>
+            Atarifix provides innovative design solutions with a strong commitment to creativity and excellence.
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <div style="display:grid; gap:8px;">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contact Information</h4>
+          <div style="display:grid; gap:8px;">
+            <a href="mailto:info@atarifix.com">info@atarifix.com</a>
+            <a href="tel:+2347059302853">+2347059302853</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy">
+        Copyright © 2026 Atarifix Consulting | Powered by Atarifix Consulting
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
